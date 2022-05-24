@@ -57,7 +57,7 @@
 }
   
   @keyframes example {
-    from {width: 500px;}
+    from {width: 10px;}
     to {width: 100%;}
   }
 
