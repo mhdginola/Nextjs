@@ -10,7 +10,7 @@ export default function EyeN3() {
   return (    
     <div className={st.eyee}>
         <div className={st.tekb}>
-            <Image src="/images/bgb2.jpg" layout='fill' alt="back"/>     
+            <Image src="/images/bgb2.jpg" layout='fill' alt="back" priority/>     
         </div>
         <div className={st.te}>
           <p>a smarter way of living</p>        
