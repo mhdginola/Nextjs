@@ -23,12 +23,10 @@ export default function Header2(){
         return(          
             <nav className={st.navbarItem}>
                 <div className={"logo"}>
-                    <Link href="/">
-                        <a>                        
+                    <Link href="/"><a>                        
                             <div className={'image-container'}>
-                            <Image src="/images/logo.png" layout="fill" objectFit="contain" className={'image'} />
-                            </div>
-                        </a>
+                            <Image src="/images/logo.png" layout="fill" objectFit="contain" className={'image'} alt="DEON" priority/>
+                            </div></a>
                     </Link>
                 </div>             
                 <ul className={statg===false?st.navMenu : st.navMenu+' '+ st.active}>                
@@ -36,12 +34,12 @@ export default function Header2(){
                     <li onClick={handleClick2}><Link href="/product"><a>SMART HOME</a></Link></li>
                     <li onClick={handleClick2}><Link href="/product"><a>LIGHTING</a></Link></li>                    
                     <li onClick={handleClick2}><Link href="/product"><a>ELECTRICAL</a></Link></li> 
-                    <li><Image src={"/images/instagram.svg"} width={20} height={20} alt={"instagram"}/></li>  
-                    <li><Image src={"/images/tiktok.svg"} width={20} height={20} alt={"tiktok"}/></li>
-                    <li><Image src={"/images/youtube.svg"} width={20} height={20} alt={"youtube"}/></li>                    
+                    <li><Image src={"/images/instagram.svg"} width={20} height={20} alt={"instagram"} priority/></li>  
+                    <li><Image src={"/images/tiktok.svg"} width={20} height={20} alt={"tiktok"} priority/></li>
+                    <li><Image src={"/images/youtube.svg"} width={20} height={20} alt={"youtube"} priority/></li>                    
                 </ul>            
                 <div className={st.menuIcon} onClick={handleClick}>                                        
-                    <Image src={statg===false?icgBars:icgTimes} width={20} height={20} alt={"menu"}/>                    
+                    <Image src={statg===false?icgBars:icgTimes} width={20} height={20} alt={"menu"} priority/>                    
                 </div>
 
             </nav>
