@@ -58,8 +58,8 @@
 }
   
   @keyframes example {
-    from {width: 100px;}
-    to {width: 100%;}
+    from {width: 0px;}
+    to {width: 1000px;}
   }
 
   .te{
