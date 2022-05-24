@@ -1,0 +1,49 @@
+.menuIcon{
+    display: none;
+}
+
+.navMenu{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 1000px){
+    .navbarItem{
+        position: relative;
+    }
+  
+    .navMenu{
+        display: block;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        position:absolute;
+        top: 56px;
+        left: 0px;
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+  
+    .navMenu.active{
+        background: #134A86;
+        padding: 0px;
+        top: 72px;
+        left: 00px;
+        opacity: 1;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+  
+    .menuIcon{
+        display: flex;
+        color: white;
+        cursor: pointer;
+        transform: scale(1.5);
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 4px;
+    }
+  }
+  
